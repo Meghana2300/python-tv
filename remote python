@@ -1,0 +1,318 @@
+from tkinter import *
+from tkinter import Button
+
+import tkinter as tk
+def buttonON():
+    print("welcone to telivison")
+def double_click(event_button1):
+
+    global double_click_flag
+    double_click_flag = True
+def button1(event=1):
+    #newWindow = tk.Toplevel(app)
+    #app=tk.TK()
+
+    global double_click_flag
+    if double_click_flag :
+        print('tv9')
+        double_click_flag = False
+    else:
+        print("")
+
+
+def button2(event=2):
+    global double_click_flag
+    if double_click_flag:
+       print("your watching geminitv")
+       double_click_flag = False
+    else:
+        print('fashion')
+       
+def button3():
+    
+    global double_click_flag
+    if double_click_flag:
+       print("your watching ABN")
+       double_click_flag = False
+    else:
+      print("your watching tv5")
+#def double_click(event):
+
+    #global double_click_flag
+    #double_click_flag = True 
+
+def button4():
+   
+    global double_click_flag
+    if double_click_flag:
+       print("your watching Maa music")
+    else:
+         print("your watching zeetv")
+#def double_click(event):
+
+ #   global double_click_flag
+  #  double_click_flag = True 
+def button5():
+   
+    global double_click_flag
+    if double_click_flag:
+       print("your watching star sports")
+    else:
+         print("invalid")
+#def double_click(event):
+
+ #   global double_click_flag
+  #  double_click_flag = True 
+def button6():
+    
+    global double_click_flag
+    if double_click_flag:
+       print("your watching ETV ")
+    else:
+        print(" invalid")
+
+#def double_click(event):
+
+ #   global double_click_flag
+  #  double_click_flag = True 
+def button7():
+    
+    global double_click_flag
+    if double_click_flag:
+       print("your watching animal planet")
+    else:
+        print("your watching discovry")
+
+#def double_click(event):
+
+ #   global double_click_flag
+  #  double_click_flag = True 
+def button8():
+   
+    global double_click_flag
+    if double_click_flag:
+       print("your watching BBC")
+    else:
+         print("your watching Gemini music")
+#def double_click(event):
+
+#    global double_click_flag
+#    double_click_flag = True 
+
+def button9():
+   
+    global double_click_flag
+    if double_click_flag:
+       print("your watching pogo")
+    else:
+         print("Catton")
+        
+#def double_click(event):
+
+  #  global double_click_flag
+   # double_click_flag = True 
+
+def button0():
+    
+    global double_click_flag
+    if double_click_flag:
+       print("your watching Sitinews")
+    else:
+        print("your watching sitichannal")
+
+
+def buttoninfo():
+    print("The purpose of the 'INFO' function is to display the current program information and the personal features settings you have selected.")
+
+def buttonprev():
+    print("your are watching next channal +1")
+
+
+def buttonback():
+    print("come back to step by step")
+
+
+def buttonvol():
+    print("your volume will be increseed +1")
+
+
+def buttonok():
+    print("you selected perticular option")
+
+
+def buttonvoll():
+    print("your volume will be decresed -1")
+
+
+def buttonprevv():
+
+
+      print("your are watching next channal -1")
+
+def buttonav():
+    print("Your TV does not have a source (or AV) button on the remote control that allows you to switch between the AV inputs. You have to manually add your devices in the Home menu before you can select them as "
+          " source. If a device is no longer connected to the TV, you can remove it from the home menu.")
+
+
+def buttonmenu():
+    print("1. Press the HOME button"
+           " Navigate to  select Settings."
+             "Select Channel Setup  choose Digital Setup."
+             "Select Audio Set-Up."
+             "Select Audio Settings  choose your preferred setting")
+
+
+def buttoneye():
+    print("set your settings  visible to yoour eyes")
+
+
+def buttonb():
+    print("in visible")
+
+
+def buttonc():
+    print("invisible")
+
+
+def buttonview():
+    print("nakthelidu")
+
+
+def buttonarc():
+    print("ARC 1 means 16:9 broadcasts will be shown correctly in widescreen (and full screen). 4:3 broadcast will show with black bars on the sides - the way they were filmed and are being broadcast in.")
+
+
+def buttonlists():
+    print("this button is used set of channnels lists")
+
+
+def buttonsleep():
+    print("this button is used to put our tv in sleep mode")
+
+
+def buttonpicture():
+    print("this button is used to control your picture visibility")
+
+
+def buttonsound():
+    print("this button used to control your sound settings")
+
+
+if __name__ == "__main__":
+    gui = Tk()
+
+    gui.configure(background="black")
+
+    gui.title("telivision")
+
+    gui.geometry("200x340")
+
+    quit = Button(gui, text=' OFF ', fg='black', bg='red', command=quit, height=1, width=7, )
+    quit.grid(row=1, column=1)
+    buttonON = Button(gui, text=' ON', fg='black', bg='green',
+                      command=buttonON, height=1, width=7)
+    buttonON.grid(row=1, column=3)
+
+    button1_Button= Button(gui, text=' 1 ', fg='black', bg='white',
+                     command=button1, height=1, width=7)
+    #button1 = Button(gui, text="Create new window", command=create_window)
+
+
+    button1_Button.grid(row=2, column=1)
+    
+    button2_Button = Button(gui, text=' 2 ', fg='black', bg='white',
+                     command=button2, height=1, width=7)
+    button2_Button.grid(row=2, column=2)
+
+    button3_Button = Button(gui, text=' 3', fg='black', bg='white',
+                     command=button3, height=1, width=7)
+    button3_Button.grid(row=2, column=3)
+    button4_Button = Button(gui, text=' 4 ', fg='black', bg='white',
+                     command=button4, height=1, width=7)
+    button4_Button.grid(row=3, column=1)
+    button5_Button = Button(gui, text=' 5', fg='black', bg='white',
+                     command=button5, height=1, width=7)
+    button5_Button.grid(row=3, column=2)
+    button6_Button = Button(gui, text=' 6', fg='black', bg='white',
+                     command=button6, height=1, width=7)
+    button6_Button.grid(row=3, column=3)
+    button7_Button = Button(gui, text=' 7', fg='black', bg='white',
+                     command=button7, height=1, width=7)
+    button7_Button.grid(row=4, column=1)
+    button8_Button = Button(gui, text=' 8', fg='black', bg='white',
+                     command=button8, height=1, width=7)
+    button8_Button.grid(row=4, column=2)
+    button9_Button = Button(gui, text=' 9', fg='black', bg='white',
+                     command=button9, height=1, width=7)
+    button9_Button.grid(row=4, column=3)
+    buttoninfo_Button = Button(gui, text=' info', fg='black', bg='white',
+                        command=buttoninfo, height=1, width=7)
+    buttoninfo_Button.grid(row=5, column=1)
+    button0_Button = Button(gui, text=' 0', fg='black', bg='white',
+                     command=button0, height=1, width=7)
+    button0_Button.grid(row=5, column=2)
+    buttonback_Button = Button(gui, text=' back', fg='black', bg='white',
+                        command=buttonback, height=1, width=7)
+    buttonback_Button.grid(row=5, column=3)
+
+    buttonprev_Button = Button(gui, text=' prev+', fg='black', bg='white',
+                        command=buttonprev, height=1, width=7)
+    buttonprev_Button.grid(row=6, column=2)
+    buttonvol_Button = Button(gui, text=' vol+', fg='black', bg='white',
+                       command=buttonvol, height=1, width=7)
+    buttonvol_Button.grid(row=7, column=1)
+
+    buttonok_Button = Button(gui, text=' ok', fg='black', bg='white',
+                      command=buttonok, height=1, width=7)
+    buttonok_Button.grid(row=7, column=2)
+
+    buttonvoll_Button = Button(gui, text=' vol-', fg='black', bg='white',
+                        command=buttonvoll, height=1, width=7)
+    buttonvoll_Button.grid(row=7, column=3)
+    buttonprevv_Button = Button(gui, text=' prev-', fg='black', bg='white',
+                         command=buttonprevv, height=1, width=7)
+    buttonprevv_Button.grid(row=8, column=2)
+
+    buttonav_Button = Button(gui, text=' TVAV', fg='black', bg='white',
+                      command=buttonav, height=1, width=7)
+    buttonav_Button.grid(row=9, column=1)
+    buttonmenu_Button = Button(gui, text=' menu', fg='black', bg='white',
+                        command=buttonmenu, height=1, width=7)
+    buttonmenu_Button.grid(row=9, column=2)
+
+    buttoneye_Button = Button(gui, text=' EYE', fg='black', bg='white',
+                       command=buttoneye, height=1, width=7)
+    buttoneye_Button.grid(row=9, column=3)
+    buttonb_Button = Button(gui, text=' ', fg='black', bg='red',
+                     command=buttonb, height=1, width=7)
+    buttonb_Button.grid(row=10, column=1)
+
+    buttonc_Button = Button(gui, text=' ', fg='black', bg='green',
+                     command=buttonc, height=1, width=7)
+    buttonc_Button.grid(row=10, column=2)
+
+    buttonview_Button = Button(gui, text=' QVIEW', fg='black', bg='yellow',
+                        command=buttonview, height=1, width=7)
+    buttonview_Button.grid(row=10, column=3)
+    buttonarc_Button = Button(gui, text=' ARC', fg='black', bg='white',
+                       command=buttonarc, height=1, width=7)
+    buttonarc_Button.grid(row=11, column=1)
+
+    buttonlists_Button = Button(gui, text=' list', fg='black', bg='blue',
+                         command=buttonlists, height=1, width=7)
+    buttonlists_Button.grid(row=11, column=2)
+    buttonsleep_Button = Button(gui, text=' sleep', fg='black', bg='white',
+                         command=buttonsleep, height=1, width=7)
+    buttonsleep_Button.grid(row=11, column=3)
+    buttonpicture_Button = Button(gui, text=' picture', fg='black', bg='white',
+                           command=buttonpicture, height=1, width=7)
+    buttonpicture_Button.grid(row=12, column=2)
+    buttonsound_Button = Button(gui, text=' sound', fg='black', bg='white',
+                         command=buttonsound, height=1, width=7)
+    buttonsound_Button.grid(row=12, column=3)
+    double_click_flag =False
+    
+    gui.bind('<Button-1>', button1 )  # bind left mouse click
+    gui.bind('<Double-1>', double_click)  # bind double left clicks
+gui.mainloop()
+app.mainloop()
